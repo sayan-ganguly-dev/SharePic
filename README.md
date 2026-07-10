@@ -166,6 +166,9 @@ IMAGEKIT_URL_ENDPOINT=
 
 https://github.com/sayan-ganguly-dev
 
+### Email
+sayanganguly718@gmail.com
+
 ---
 
 # ⭐ Support
