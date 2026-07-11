@@ -7,7 +7,7 @@ const Feed = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/post")
+      .get("https://sharepic-backend.onrender.com/post")
       .then((res) => {
         setPosts(res.data.posts);
       })

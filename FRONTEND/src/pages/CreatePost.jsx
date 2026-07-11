@@ -22,7 +22,7 @@ function CreatePost() {
 
     try {
       await axios.post(
-        "http://localhost:3000/create-post",
+        "https://sharepic-backend.onrender.com/create-post",
         formData,
         {
           headers: {
@@ -33,9 +33,13 @@ function CreatePost() {
 
       navigate("/feed");
     } catch (err) {
-      console.log(err);
-      alert("Error creating post");
-    }
+    console.log(err);
+
+    console.log("Status:", err.response?.status);
+    console.log("Data:", err.response?.data);
+
+    alert(JSON.stringify(err.response?.data || err.message));
+}
   };
 
   return (
