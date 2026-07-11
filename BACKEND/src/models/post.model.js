@@ -1,33 +1,25 @@
-const mongoose = require('mongoose') ;
+// const mongoose = require('mongoose') ;
 
-
-const postSchema = new mongoose.Schema({
-    image : String ,
-    caption : String
-})
-
-
-const postModel = mongoose.model('post', postSchema) ;
-
-module.exports = postModel ;
-
-// const mongoose = require("mongoose");
 
 // const postSchema = new mongoose.Schema({
-//   image: {
-//     type: String,
-//     required: true,
-//   },
+//     image : String ,
+//     caption : String
+// })
 
-//   caption: {
-//     type: String,
-//     required: true,
-//   },
 
-//   user: {
-//     type: String,
-//     required: true,
-//   },
-// });
+// const postModel = mongoose.model('post', postSchema) ;
 
-// module.exports = mongoose.model("Post", postSchema);
+// module.exports = postModel ;
+
+
+const mongoose = require("mongoose");
+
+const postSchema = new mongoose.Schema({
+    image: String,
+    caption: String,
+    user: String
+});
+
+const postModel = mongoose.model("post", postSchema);
+
+module.exports = postModel;

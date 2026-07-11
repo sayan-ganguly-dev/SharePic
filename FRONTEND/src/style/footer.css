@@ -1,0 +1,40 @@
+.footer {
+  width: 100%;
+  background: #222831;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 60px;
+}
+
+.footer h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 8px 0;
+  color: #d6d6d6;
+  font-size: 16px;
+}
+
+.footer hr {
+  width: 80%;
+  margin: 25px auto;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.copyright {
+  font-size: 15px;
+}
+
+.developer {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.developer span {
+  color: #4CAF50;
+  font-weight: 700;
+}

@@ -22,7 +22,7 @@ function CreatePost() {
 
     try {
       await axios.post(
-        "https://sharepic-backend.onrender.com/create-post",
+      "https://sharepic-backend.onrender.com/create-post",               //   "https://sharepic-backend.onrender.com/create-post"
         formData,
         {
           headers: {

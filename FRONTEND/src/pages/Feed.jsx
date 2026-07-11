@@ -7,7 +7,7 @@ const Feed = () => {
 
   useEffect(() => {
     axios
-      .get("https://sharepic-backend.onrender.com/post")
+      .get( "https://sharepic-backend.onrender.com/post")              ///  "https://sharepic-backend.onrender.com/post"
       .then((res) => {
         setPosts(res.data.posts);
       })
@@ -37,9 +37,7 @@ const Feed = () => {
 
               <div className="post-content">
 
-               <h3>
-                SharePic user
-               </h3>
+              <h3 className="post-user">{post.user || "SharePic User"}</h3>
 
                 <p className="post-caption">
                   {post.caption}

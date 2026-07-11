@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://sharepic-backend.onrender.com",
+    baseURL: "https://sharepic-backend.onrender.com",   // "https://sharepic-backend.onrender.com"
 });
 
 export default api;
