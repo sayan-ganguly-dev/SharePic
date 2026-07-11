@@ -17,7 +17,7 @@ const Feed = () => {
   return (
     <div className="feed-container">
 
-      <h1 className="feed-title">Your Posts</h1>
+      <h1 className="feed-title">Posts</h1>
 
       {posts.length === 0 ? (
         <div className="empty-feed">
